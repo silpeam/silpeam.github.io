@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+
+/*html{
+	font-size: 10px;
+
+}
+*/
+body{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; /* フォントの種類 */
+    font-size: 1.4rem; /* フォントサイズ */
+    line-height: 1.6; /* 行間 */
+
+    letter-spacing: .1em;/* 文字間隔 */
+
+    color: #4c4c4c; /* 文字色 */
+    background-color: #B7B7B7; /* 背景色 */
+}
+
+html /* root */
+{
+    font-size: 62.5%; /* =10px =100% */
+}
+
+body {
+    color: #4c4c4c; /* 文字色 */
+    background-color: #B7B7B7; /* 背景色 */
+}
+
+header h1,
+section h2,
+#skills h3,
+#works .works-box a .works-box-inner .button-readmore{
+	text-transform: capitalize;
+	font-family: 'Handlee', cursive;
+}
+section#skills h2,
+h3{
+	color: #fff;
+}
+section#contact h2,
+section#works h2{
+	color: #3E3175;
+}
+main section h2{
+	font-size: 2em;
+	text-align: center;
+	/*padding: 40px 0 0;*/
+}
+
+.block-center,
+section.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ /* すべて14px
+------------------------------------------------------------*/
+    font-size: 14px;
+    font-size: 140%;
+    font-size: 1.4em;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 20px; /* そのまま20px */
+    font-size: 200%; /* 親要素bodyの14pxを基準に200% =28px */
+    font-size: 2em; /* 親要素bodyの14pxを基準に2倍 =28px */
+    font-size: 2rem; /* rootの10pxを基準に2倍 =20px */
+}
+
+div {
+    font-size: 12px; /* そのまま12px */
+    font-size: 120%; /* 親要素bodyの14pxを基準に120% =16.8px(約17px) */
+    font-size: 1.2em; /* 親要素bodyの14pxを基準に1.2倍 =16.8px(約17px) */
+    font-size: 1.2rem; /* rootの10pxを基準に1.2倍 =12px */
+}
+div p {
+    font-size: 12px; /* そのまま12px */
+    font-size: 120%; /* 親要素divの17pxを基準に120% =20.4px(約20px) */
+    font-size: 1.2em; /* 親要素divの17pxを基準に1.2倍 =20.4px(約20px) */
+    font-size: 1.2rem; /* rootの10pxを基準に1.2倍 =12px */
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*  header
+-------------------------------- */
+header{
+	text-align: center;
+}
+header h1{
+ 	clear: both;
+ }
+header h1 span{
+ display: block;
+ color: #3E3175;
+ font-size: 4.2rem;
+}
+header img{
+	width: 15%;
+	border-radius: 50%;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.button-contact{
+	display: block;
+	float: right;
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	margin: 20px 20px 0 0;
+	padding: 10px;
+	line-height: 0;
+	text-align: center;
+	border: 2px solid #333;
+	border-radius: 3px;
+	color: #333;
+}
+.button-contact i{
+	position: relative;
+	top:0;
+	left:0;
+}
+.button-contact:hover,
+.button-contact:active
+{
+    color: #fff;
+    background-color: #333;
+}
+.greeting{
+	width: 60%;
+	margin: 0 auto 40px;
+}
+
+
+
+/*  section共通
+-------------------------------- */
+
+section{
+	overflow: auto;
+	padding: 60px 0;
+}
+
+
+/*  skills
+-------------------------------- */
+
+section#skills{
+	background: #AA9539;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	overflow: auto;
+	padding-bottom: 40px;
+}
+
+.skill-box{
+	background: #B7B7B7;
+	border-radius: 5px;
+	width: 32%;
+	float: left;
+	padding: 20px;
+}
+#skills h2{
+	color: #B7B7B7;
+	margin-bottom: 60px;
+}
+#skills h3{
+	font-size: 24px;
+    font-size: 2.4rem;
+    color: #3E3175;
+	text-align: center;
+}
+#skills .container{
+	display: flex; /*-- 要素の親に指定--*/
+    justify-content: space-between; /*-- サイドのアイテムはそれぞれ端に、残りのアイテムを等間隔で配置--*/
+}
+.skill-box{  /*要素*/
+	text-align: center;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+    width: 32%;
+    padding: 20px;
+
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.skill-box i{
+	font-size: 45px;
+    font-size: 4.5rem;
+	width: 80px;
+	height: 80px;
+	background-color: #3E3175;
+	color:#fff;
+	border-radius: 50%;
+	position: relative;
+	padding-top: 15px;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+}
+.fa-commenting-o:before {
+    content: "\f27b";
+}
+.fa-pencil:before {
+    content: "\f109";
+}
+.fa-laptop:before {
+    content: "\f040";
+}
+.skill-box h3 span{
+	display: block;
+	padding-bottom: 20px;
+	font-size: 2rem;
+	line-height: 1rem;
+	color:#3E3175;
+}
+
+.skill-box p{
+	text-align: left;
+}
+
+
+
+/*  works
+-------------------------------- */
+/*Worksの部分はウィンドウ幅いっぱいに表示させるため、インナーボックスは配置しません。*/
+
+#works{
+	padding-bottom: 0;
+}
+
+#works h2{
+	margin-bottom:  50px;
+}
+#works .work-box a .work-box-inner h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+.work-box{
+    float: left;
+    height: 100%; /*どうして height100%?*/
+	width: 33.333%;
+}
+#works::after
+{
+    display: block;
+    clear: both;
+    content: '';
+}
+#works .work-box a
+{
+    position: relative;
+    display: block;
+}
+#works .work-box a .work-box-inner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+}
+#works .work-box a:hover .work-box-inner
+{
+    display: block;
+    width: 100%;
+}
+#works .work-box a .work-box-inner div
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /*絶対配置指定のボックスを上下左右の中央寄せにする場合はtop、bottom、left、rightの距離をすべて0にしておき、marginプロパティの値をautoにします。*/
+
+    height: 40%;
+    margin: auto;
+    padding: 10px 20px;
+}
+.work-box small{
+    font-size: 1rem;
+    	display: block;
+    margin-bottom: 15px;
+}
+#works .work-box a .work-box-inner .button-readmore
+{
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    width: 180px;
+    margin: auto;
+    padding: 5px 0;
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #3E3175;
+}
+#works .work-box a .work-box-inner .button-readmore:hover
+{
+    background-color: #0f949b;
+}
+#works .work-box img
+{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+/*  contact
+-------------------------------- */
+
+#contact ul{
+	margin-top: 60px;
+	text-align: center;
+}
+#contact ul li{
+    font-size: 2.8rem;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-right: 20px;
+    text-align: center;
+    /*vertical-align: top;*/
+}
+#contact ul li{
+	font-size: 3.2rem;
+	}
+#contact ul li:last-child{
+    margin-right: none;
+}
+
+#contact ul li a{
+	display: block;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #3E3175;
+}
+
+#contact ul li a:hover{
+	background: #0f949b;
+}
+
+
+
+
+/* footer
+-------------------------------- */
+footer{
+	width: 100%;
+	text-align: center;
+	background-color:  #AA9539;
+	padding: 10px 0;
+	color: #fff;
+}
