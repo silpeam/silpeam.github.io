@@ -3,11 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee');
 
 
-/*html{
-	font-size: 10px;
-
-}
-*/
 body{
     font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; /* フォントの種類 */
     font-size: 1.4rem; /* フォントサイズ */
@@ -60,6 +55,7 @@ section.container {
 
  /* すべて14px
 ------------------------------------------------------------*/
+body{
     font-size: 14px;
     font-size: 140%;
     font-size: 1.4em;
@@ -104,11 +100,9 @@ header h1 span{
  font-size: 4.2rem;
 }
 header img{
-	width: 15%;
 	border-radius: 50%;
 	display: block;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin: 20px auto;
 }
 
 .button-contact{
